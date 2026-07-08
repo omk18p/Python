@@ -1,29 +1,36 @@
-import streamlit as st
-import pandas as pd
-import numpy as np
+import streamlit as st      # Import Streamlit for building web applications
+import pandas as pd         # Import Pandas for working with tabular data
+import numpy as np          # Import NumPy for numerical operations
 
-## Title of the aplication
+# -----------------------------
+# Display the title of the app
+# -----------------------------
 st.title("Hello Streamlit")
 
-## Diplay a Simple Text
-st.write("This is a imple text")
+# Display simple text on the webpage
+st.write("This is a simple text")
 
-##create a simple Dataframe
-
+# -----------------------------
+# Create a Pandas DataFrame
+# -----------------------------
 df = pd.DataFrame({
     'first column': [1, 2, 3, 4],
     'second column': [10, 20, 30, 40]
 })
 
-
-## Display the Dataframe
-st.write("Here is the dataframe")
+# Display a heading and the DataFrame
+st.write("Here is the DataFrame:")
 st.write(df)
 
-
-##create a line chart
-
-chart_data=pd.DataFrame(
-    np.random.randn(20,3),columns=['a','b','c']
+# -----------------------------
+# Create random data for a chart
+# -----------------------------
+# np.random.randn(20, 3) generates 20 rows and 3 columns
+# of random numbers from a standard normal distribution.
+chart_data = pd.DataFrame(
+    np.random.randn(20, 3),
+    columns=['a', 'b', 'c']
 )
+
+# Display the data as an interactive line chart
 st.line_chart(chart_data)
