@@ -7,4 +7,4 @@ marks = {
 
 
 # print(marks, type(marks))
-print(marks["Harry"])
+print(marks["Harry"]) #100
