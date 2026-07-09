@@ -5,4 +5,4 @@ def pattern(n):
     pattern(n-1)
 
 
-pattern(3)
+pattern(5)
