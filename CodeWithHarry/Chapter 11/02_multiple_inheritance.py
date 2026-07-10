@@ -9,8 +9,6 @@ class Coder:
     def printLanguages(self):
         print(f"Out of all the languages here is your language: {self.language}")
      
-
-
 class Programmer(Employee, Coder):
     company = "ITC Infotech"
     def showLanguage(self):

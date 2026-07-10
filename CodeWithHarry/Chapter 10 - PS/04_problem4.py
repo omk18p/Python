@@ -15,7 +15,7 @@ class Calculator:
     def hello():
         print("Hello there!")
 
-a = Calculator(4)
+a = Calculator(16)
 a.hello()
 a.square()
 a.cube()
